@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ========== META ========== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaspreet Kaur — AI/ML Engineer | Toronto</title>
+  <meta name="description"
+    content="AI & Software Engineer with 4+ years of experience in computer vision, LLMs, and scalable Python applications. Former AI Engineer Co-op @ Government of Canada.">
+  <meta name="keywords" content="AI Engineer, ML Engineer, Python, Computer Vision, YOLOv8, LLMs, Azure, Toronto">
+  <meta name="author" content="Jaspreet Kaur">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Jaspreet Kaur — AI/ML Engineer">
+  <meta property="og:description" content="Building scalable AI solutions. Python · Azure · YOLOv8 · LLMs.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://preetjas11.github.io/my-portfolio/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jaspreet Kaur — AI/ML Engineer">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Google Fonts — Syne + Inter + JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&family=Syne:wght@600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jaspreet Kaur",
+    "jobTitle": "AI/ML Engineer",
+    "url": "https://preetjas11.github.io/my-portfolio/",
+    "sameAs": [
+      "https://linkedin.com/in/jaspreet~kaur",
+      "https://github.com/PreetJas11"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Skip to main content (accessibility) -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Particle canvas background -->
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+  <!-- ============================= NAVBAR ============================= -->
+  <header class="navbar" id="navbar" role="banner">
+    <div class="container navbar__inner">
+      <a href="#hero" class="navbar__logo" aria-label="Home">
+        <svg width="40" height="40" viewBox="0 0 64 64" aria-hidden="true">
+          <defs>
+            <linearGradient id="logo-g" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#00C8E0" />
+              <stop offset="100%" stop-color="#0066FF" />
+            </linearGradient>
+          </defs>
+          <rect width="64" height="64" rx="14" fill="url(#logo-g)" />
+          <text x="32" y="44" text-anchor="middle" font-family="Syne,system-ui,sans-serif" font-weight="700"
+            font-size="28" fill="#fff">JK</text>
+        </svg>
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="navbar__links" id="nav-links" aria-label="Main navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <a href="#contact" class="btn btn--primary btn--sm navbar__cta">Let's Talk</a>
+        <!-- Hamburger (mobile) -->
+        <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" type="button">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ============================= HERO ============================= -->
+    <section class="hero" id="hero">
+      <!-- Vertical social bar -->
+      <div class="hero__socials" aria-label="Social links">
+        <a href="https://linkedin.com/in/jaspreet~kaur" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg>
+        </a>
+        <a href="https://github.com/PreetJas11" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+          </svg>
+        </a>
+        <a href="mailto:jaspreetbarnala0123@gmail.com" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+        </a>
+        <span class="hero__socials-line" aria-hidden="true"></span>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__greeting reveal-hero" style="--delay:.3s">Hello, I'm</p>
+          <h1 class="hero__name reveal-hero" style="--delay:.5s">Jaspreet Kaur</h1>
+          <p class="hero__headline reveal-hero" style="--delay:.7s">
+            <span class="typewriter" id="typewriter"></span><span class="typewriter__cursor" aria-hidden="true">|</span>
+          </p>
+          <p class="hero__description reveal-hero" style="--delay:.9s">
+            I am an AI & Software Engineer specializing in <strong>Python</strong>-driven solutions. From building
+            <strong>predictive AI models</strong> to automating enterprise workflows with <strong>LLMs</strong>, I focus
+            on delivering
+            measurable impact through code.
+          </p>
+          <div class="hero__cta reveal-hero" style="--delay:1.1s">
+            <a href="#projects" class="btn btn--primary">View My Work</a>
+            <a href="#" class="btn btn--outline" id="resume-btn">Download Resume</a>
+          </div>
+        </div>
+        <div class="hero__visual reveal-hero" style="--delay:.6s" aria-hidden="true">
+          <div class="hero__orb"></div>
+          <div class="hero__ring hero__ring--1"></div>
+          <div class="hero__ring hero__ring--2"></div>
+          <div class="hero__ring hero__ring--3"></div>
+        </div>
+      </div>
+
+      <!-- Stats bar -->
+      <div class="hero__stats">
+        <div class="container hero__stats-inner">
+          <div class="hero-stat reveal-hero" style="--delay:1.3s">
+            <span class="hero-stat__number" data-count="4">0</span><span class="hero-stat__suffix">+</span>
+            <span class="hero-stat__label">Years of Experience</span>
+          </div>
+          <div class="hero-stat reveal-hero" style="--delay:1.4s">
+            <span class="hero-stat__number" data-count="3">0</span>
+            <span class="hero-stat__label">Employers</span>
+          </div>
+          <div class="hero-stat reveal-hero" style="--delay:1.5s">
+            <span class="hero-stat__number" data-count="40">0</span><span class="hero-stat__suffix">%</span>
+            <span class="hero-stat__label">Accuracy Boost</span>
+          </div>
+          <div class="hero-stat reveal-hero" style="--delay:1.6s">
+            <span class="hero-stat__number" data-count="98">0</span><span class="hero-stat__suffix">%</span>
+            <span class="hero-stat__label">Reporting Automated</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= ABOUT ============================= -->
+    <section class="section section--alt about" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section__title">About Me</h2>
+          <p class="section__subtitle">Building AI That Works in the Real World</p>
+        </div>
+        <div class="about__grid">
+          <div class="about__photo-wrap reveal">
+            <div class="about__photo">
+              <div class="about__photo-placeholder" aria-label="Jaspreet Kaur profile photo">JK</div>
+            </div>
+          </div>
+          <div class="about__content">
+            <div class="about__text reveal">
+              <p>I'm an AI &amp; Software Engineer with <strong>4+ years</strong> of experience building scalable
+                applications and AI-driven solutions. My work sits at the intersection of machine learning, cloud
+                infrastructure, and real-world impact — whether that's training a computer vision model to identify
+                objects on a dataset, building Streamlit apps that teams actually use, or automating
+                workflows that save dozens of hours a week.</p>
+              <p>I specialize in computer vision (YOLOv8, Roboflow), LLM-powered automation (OpenAI GPT-4o mini, Azure
+                OpenAI), and full-stack development with Python, Django, and React. I'm equally comfortable in the cloud
+                (Azure, AWS) and in the weeds of SQL optimization and ETL pipelines.</p>
+              <p>When I'm not building, I'm researching — currently exploring Knowledge Graphs, Ontologies, and Signal
+                Detection platforms as the next frontier in AI.</p>
+            </div>
+            <div class="about__cards">
+              <div class="about-card reveal">
+                <span class="about-card__icon">🧠</span>
+                <h3 class="about-card__title">AI-First Thinking</h3>
+                <p class="about-card__text">From model training to deployment, I approach problems with
+                  production-readiness in mind.</p>
+              </div>
+              <div class="about-card reveal">
+                <span class="about-card__icon">⚡</span>
+                <h3 class="about-card__title">Impact by Numbers</h3>
+                <p class="about-card__text">Every project I touch is measured: 40% accuracy gains, 98% effort reduction,
+                  99% uptime.</p>
+              </div>
+              <div class="about-card reveal">
+                <span class="about-card__icon">🔗</span>
+                <h3 class="about-card__title">Full-Stack Context</h3>
+                <p class="about-card__text">I bridge the gap between data science and software engineering, shipping
+                  end-to-end solutions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= EXPERIENCE ============================= -->
+    <section class="section experience" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section__title">Work Experience</h2>
+          <p class="section__subtitle">My professional journey across AI, engineering, and leadership</p>
+        </div>
+
+        <!-- Filter tabs -->
+        <div class="filter-tabs reveal" id="exp-filters">
+          <button class="filter-tab active" data-filter="all">All</button>
+          <button class="filter-tab" data-filter="ai-ml">AI / ML</button>
+          <button class="filter-tab" data-filter="engineering">Engineering</button>
+          <button class="filter-tab" data-filter="leadership">Leadership</button>
+        </div>
+
+        <div class="timeline" id="timeline">
+
+          <!-- Concentrix -->
+          <article class="timeline__item reveal" data-categories="engineering,leadership"
+            aria-label="Technical Support Advisor at Concentrix">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__card" role="button" tabindex="0" aria-expanded="false">
+              <div class="timeline__header">
+                <div>
+                  <h3 class="timeline__role">Technical Support Advisor III → II</h3>
+                  <span class="timeline__company">Concentrix — ON, Canada</span>
+                </div>
+                <time class="timeline__date">Oct 2025 — Present</time>
+              </div>
+              <ul class="timeline__details">
+                <li>Achieved <strong>95% SLA compliance</strong> through Salesforce CRM workflow optimization</li>
+                <li>Reduced escalations by <strong>over one-third</strong> via structured risk assessment workflows</li>
+                <li>Eliminated <strong>98% of manual Excel reporting</strong> by building Salesforce Connex dashboards
+                </li>
+                <li>Improved issue resolution accuracy by <strong>more than 80%</strong></li>
+              </ul>
+              <span class="timeline__toggle" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </span>
+            </div>
+          </article>
+
+          <!-- AAFC -->
+          <article class="timeline__item reveal" data-categories="ai-ml" aria-label="AI Developer Co-op at AAFC">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__card" role="button" tabindex="0" aria-expanded="false">
+              <div class="timeline__header">
+                <div>
+                  <h3 class="timeline__role">AI Developer Co-op</h3>
+                  <span class="timeline__company">Agriculture &amp; Agri-Food Canada — Government of Canada</span>
+                </div>
+                <time class="timeline__date">May 2024 — Aug 2024</time>
+              </div>
+              <ul class="timeline__details">
+                <li>Built object identification app using <strong>YOLOv8 + Roboflow + Streamlit</strong> → 40% accuracy
+                  boost</li>
+                <li>Automated table extraction from PDFs using <strong>OpenAI GPT-4o mini</strong></li>
+                <li>Earned <strong>Microsoft Azure OpenAI Hackathon Badge</strong> from Microsoft Americas Azure Team
+                </li>
+                <li>Doubled project tracking efficiency via <strong>Power BI dashboard</strong> at user + department
+                  level</li>
+                <li>Researched Signal Detection platforms: GraphDB, Azure Services, NLP, Ontologies, Knowledge Graphs
+                </li>
+              </ul>
+              <span class="timeline__toggle" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </span>
+            </div>
+          </article>
+
+          <!-- Infosys — Technology Analyst -->
+          <article class="timeline__item reveal" data-categories="engineering,leadership"
+            aria-label="Technology Analyst at Infosys">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__card" role="button" tabindex="0" aria-expanded="false">
+              <div class="timeline__header">
+                <div>
+                  <h3 class="timeline__role">Technology Analyst</h3>
+                  <span class="timeline__company">Infosys Limited — India</span>
+                </div>
+                <time class="timeline__date">Sep 2022 — Mar 2023</time>
+              </div>
+              <ul class="timeline__details">
+                <li>Led <strong>12+ person team</strong>; eliminated database errors by two-thirds via MS SQL + Python
+                  ETL</li>
+                <li>Won <strong>Best Team – Project Excellence Award</strong></li>
+                <li>Reduced SDLC cycle time by <strong>more than half</strong></li>
+              </ul>
+              <span class="timeline__toggle" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </span>
+            </div>
+          </article>
+
+          <!-- Infosys — Senior System Software Engineer -->
+          <article class="timeline__item reveal" data-categories="engineering"
+            aria-label="Senior System Software Engineer at Infosys">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__card" role="button" tabindex="0" aria-expanded="false">
+              <div class="timeline__header">
+                <div>
+                  <h3 class="timeline__role">Senior System Software Engineer</h3>
+                  <span class="timeline__company">Infosys Limited — India</span>
+                </div>
+                <time class="timeline__date">Oct 2021 — Sep 2022</time>
+              </div>
+              <ul class="timeline__details">
+                <li>Automated data processing with <strong>RESTful APIs + Python</strong>, saving 15 hours/week</li>
+                <li>Enhanced DB performance, reducing processing time by <strong>half</strong></li>
+              </ul>
+              <span class="timeline__toggle" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </span>
+            </div>
+          </article>
+
+          <!-- Infosys — System Software Engineer -->
+          <article class="timeline__item reveal" data-categories="engineering"
+            aria-label="System Software Engineer at Infosys">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__card" role="button" tabindex="0" aria-expanded="false">
+              <div class="timeline__header">
+                <div>
+                  <h3 class="timeline__role">System Software Engineer</h3>
+                  <span class="timeline__company">Infosys Limited — India</span>
+                </div>
+                <time class="timeline__date">Aug 2019 — Sep 2021</time>
+              </div>
+              <ul class="timeline__details">
+                <li>Unix performance tuning achieving <strong>99% production uptime</strong></li>
+                <li>Halved issue resolution time through cross-team collaboration</li>
+              </ul>
+              <span class="timeline__toggle" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </span>
+            </div>
+          </article>
+
+          <!-- Infosys — Intern -->
+          <article class="timeline__item reveal" data-categories="engineering" aria-label="Intern at Infosys">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__card" role="button" tabindex="0" aria-expanded="false">
+              <div class="timeline__header">
+                <div>
+                  <h3 class="timeline__role">Intern</h3>
+                  <span class="timeline__company">Infosys Limited — India</span>
+                </div>
+                <time class="timeline__date">Jan 2019 — May 2019</time>
+              </div>
+              <ul class="timeline__details">
+                <li>Built full-stack <strong>Secure Webmail Client</strong> (Java, Spring Boot, React, HTML/CSS, SQL) in
+                  a team of 5</li>
+              </ul>
+              <span class="timeline__toggle" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= PROJECTS ============================= -->
+    <section class="section section--alt projects" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section__title">Featured Projects</h2>
+          <p class="section__subtitle">Impactful work across AI, automation, and full-stack development</p>
+        </div>
+
+        <!-- Filter pills -->
+        <div class="filter-tabs reveal" id="proj-filters">
+          <button class="filter-tab active" data-filter="all">All</button>
+          <button class="filter-tab" data-filter="cv">Computer Vision</button>
+          <button class="filter-tab" data-filter="llm">LLMs</button>
+          <button class="filter-tab" data-filter="fullstack">Full-Stack</button>
+          <button class="filter-tab" data-filter="data">Data</button>
+        </div>
+
+        <div class="projects__grid" id="projects-grid">
+
+          <!-- Project 1: Canadian Stock Price Prediction -->
+          <article class="project-card reveal" data-categories="data,ai" id="project-1">
+            <div class="project-card__header">
+              <span class="project-card__icon" aria-hidden="true">📈</span>
+              <span class="project-card__badge">High Impact</span>
+            </div>
+            <h3 class="project-card__title">Canadian Stock Price</h3>
+            <p class="project-card__company">Independent AI Project</p>
+            <p class="project-card__desc">Deep learning model developed to predict Canadian stock market trends using
+              time-series analysis and LSTMs, optimized for volatility handling.</p>
+            <div class="project-card__impact">
+              <span class="project-card__impact-number">85%</span>
+              <span class="project-card__impact-label">directional accuracy</span>
+            </div>
+            <div class="project-card__tags">
+              <span class="tag">Python</span>
+              <span class="tag">TensorFlow</span>
+              <span class="tag">LSTMs</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Scikit-learn</span>
+            </div>
+            <button class="project-card__btn" data-project="1"
+              aria-label="View details for Canadian Stock Price Prediction">View Details</button>
+          </article>
+
+          <!-- Project 2: Home Depot Product Relevance -->
+          <article class="project-card reveal" data-categories="llm,ai" id="project-2">
+            <div class="project-card__header">
+              <span class="project-card__icon" aria-hidden="true">🔍</span>
+              <span class="project-card__badge">NLP / Search</span>
+            </div>
+            <h3 class="project-card__title">Home Depot Product Search Relevance</h3>
+            <p class="project-card__company">NLP Optimization Project</p>
+            <p class="project-card__desc">Optimized search relevance scores for Home Depot's product catalog using NLP
+              techniques and BERT embeddings to improve retrieval accuracy.</p>
+            <div class="project-card__impact">
+              <span class="project-card__impact-number">12%</span>
+              <span class="project-card__impact-label">RMSE improvement</span>
+            </div>
+            <div class="project-card__tags">
+              <span class="tag">Python</span>
+              <span class="tag">BERT</span>
+              <span class="tag">NLP</span>
+              <span class="tag">Gensim</span>
+              <span class="tag">NLTK</span>
+            </div>
+            <button class="project-card__btn" data-project="2" aria-label="View details for Home Depot Relevance">View
+              Details</button>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card reveal" data-categories="data" id="project-3">
+            <div class="project-card__header">
+              <span class="project-card__icon" aria-hidden="true">📊</span>
+            </div>
+            <h3 class="project-card__title">Power BI KPI Dashboard Suite</h3>
+            <p class="project-card__company">Concentrix</p>
+            <p class="project-card__desc">Multi-level dashboards for real-time KPI tracking including daily follow-ups,
+              overdue tasks, and open tickets at user + department level.</p>
+            <div class="project-card__impact">
+              <span class="project-card__impact-number">98%</span>
+              <span class="project-card__impact-label">manual effort reduced</span>
+            </div>
+            <div class="project-card__tags">
+              <span class="tag">Power BI</span>
+              <span class="tag">Salesforce</span>
+              <span class="tag">Data Viz</span>
+            </div>
+            <button class="project-card__btn" data-project="3" aria-label="View details for Power BI Dashboard">View
+              Details</button>
+          </article>
+
+          <!-- Project 4: Games IMDB Project -->
+          <article class="project-card reveal" data-categories="fullstack" id="project-4">
+            <div class="project-card__header">
+              <span class="project-card__icon" aria-hidden="true">🎮</span>
+              <span class="project-card__badge">Django Fullstack</span>
+            </div>
+            <h3 class="project-card__title">Games IMDB Project</h3>
+            <p class="project-card__company">Web Application Development</p>
+            <p class="project-card__desc">A comprehensive game discovery platform built with Python and Django,
+              featuring user ratings, reviews, and a searchable database of titles.</p>
+            <div class="project-card__impact">
+              <span class="project-card__impact-number">Full</span>
+              <span class="project-card__impact-label">CRUD Functionality</span>
+            </div>
+            <div class="project-card__tags">
+              <span class="tag">Python</span>
+              <span class="tag">Django</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Bootstrap</span>
+            </div>
+            <button class="project-card__btn" data-project="4" aria-label="View details for Games IMDB Project">View
+              Details</button>
+          </article>
+
+          <!-- Project 5: IELTS App -->
+          <article class="project-card reveal" data-categories="fullstack,ai" id="project-5">
+            <div class="project-card__header">
+              <span class="project-card__icon" aria-hidden="true">📝</span>
+              <span class="project-card__badge">React + Python</span>
+            </div>
+            <h3 class="project-card__title">IELTS Exam Prep App</h3>
+            <p class="project-card__company">EdTech Solution</p>
+            <p class="project-card__desc">Full-stack exam preparation platform built with React and Python, featuring
+              automated scoring and progress tracking for IELTS modules.</p>
+            <div class="project-card__impact">
+              <span class="project-card__impact-number">React</span>
+              <span class="project-card__impact-label">Powered Frontend</span>
+            </div>
+            <div class="project-card__tags">
+              <span class="tag">Python</span>
+              <span class="tag">React</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Vite</span>
+            </div>
+            <button class="project-card__btn" data-project="5" aria-label="View details for IELTS App">View
+              Details</button>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card reveal" data-categories="data,engineering" id="project-5">
+            <div class="project-card__header">
+              <span class="project-card__icon" aria-hidden="true">⚙️</span>
+              <span class="project-card__badge project-card__badge--award">🥇 Excellence Award</span>
+            </div>
+            <h3 class="project-card__title">ETL Pipeline &amp; Database Optimization</h3>
+            <p class="project-card__company">Infosys</p>
+            <p class="project-card__desc">Designed and implemented ETL pipelines that eliminated database errors by
+              two-thirds and improved customer data record quality.</p>
+            <div class="project-card__impact">
+              <span class="project-card__impact-number">67%</span>
+              <span class="project-card__impact-label">fewer DB errors</span>
+            </div>
+            <div class="project-card__tags">
+              <span class="tag">ETL</span>
+              <span class="tag">Python</span>
+              <span class="tag">SQL</span>
+            </div>
+            <button class="project-card__btn" data-project="5" aria-label="View details for ETL Pipeline">View
+              Details</button>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+      <div class="modal">
+        <button class="modal__close" id="modal-close" aria-label="Close modal">&times;</button>
+        <div class="modal__badge" id="modal-badge"></div>
+        <h3 class="modal__title" id="modal-title"></h3>
+        <p class="modal__company" id="modal-company"></p>
+        <div class="modal__impact" id="modal-impact"></div>
+        <p class="modal__desc" id="modal-desc"></p>
+        <h4 class="modal__stack-title">Tech Stack</h4>
+        <div class="modal__tags" id="modal-tags"></div>
+      </div>
+    </div>
+
+    <!-- ============================= SKILLS ============================= -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section__title">Skills &amp; Tech Stack</h2>
+          <p class="section__subtitle">Technologies I use to bring ideas to life</p>
+        </div>
+
+        <!-- Category tabs -->
+        <div class="filter-tabs reveal" id="skills-tabs">
+          <button class="filter-tab active" data-filter="all">All</button>
+          <button class="filter-tab" data-filter="prog">Programming</button>
+          <button class="filter-tab" data-filter="aiml">AI &amp; ML</button>
+          <button class="filter-tab" data-filter="cloud">Cloud</button>
+          <button class="filter-tab" data-filter="db">Databases</button>
+          <button class="filter-tab" data-filter="tools">Tools</button>
+        </div>
+
+        <div class="skills__grid" id="skills-grid">
+          <!-- Programming -->
+          <span class="skill-pill reveal" data-category="prog">Python</span>
+          <span class="skill-pill reveal" data-category="prog">C</span>
+          <span class="skill-pill reveal" data-category="prog">Java</span>
+          <span class="skill-pill reveal" data-category="prog">React JS</span>
+          <span class="skill-pill reveal" data-category="prog">Django</span>
+          <span class="skill-pill reveal" data-category="prog">Streamlit</span>
+          <!-- AI & ML -->
+          <span class="skill-pill reveal" data-category="aiml">Machine Learning</span>
+          <span class="skill-pill reveal" data-category="aiml">Deep Learning</span>
+          <span class="skill-pill reveal" data-category="aiml">NLP</span>
+          <span class="skill-pill reveal" data-category="aiml">LLMs</span>
+          <span class="skill-pill reveal" data-category="aiml">Computer Vision</span>
+          <span class="skill-pill reveal" data-category="aiml">YOLOv8</span>
+          <span class="skill-pill reveal" data-category="aiml">Roboflow</span>
+          <span class="skill-pill reveal" data-category="aiml">TensorFlow</span>
+          <span class="skill-pill reveal" data-category="aiml">Keras</span>
+          <span class="skill-pill reveal" data-category="aiml">Scikit-learn</span>
+          <!-- Cloud -->
+          <span class="skill-pill reveal" data-category="cloud">Azure ML</span>
+          <span class="skill-pill reveal" data-category="cloud">Azure OpenAI</span>
+          <span class="skill-pill reveal" data-category="cloud">Azure DevOps</span>
+          <span class="skill-pill reveal" data-category="cloud">Azure Doc Intelligence</span>
+          <span class="skill-pill reveal" data-category="cloud">AWS Athena</span>
+          <!-- Databases -->
+          <span class="skill-pill reveal" data-category="db">MySQL</span>
+          <span class="skill-pill reveal" data-category="db">Oracle SQL</span>
+          <span class="skill-pill reveal" data-category="db">SQL Server</span>
+          <span class="skill-pill reveal" data-category="db">PL/SQL</span>
+          <span class="skill-pill reveal" data-category="db">MongoDB</span>
+          <span class="skill-pill reveal" data-category="db">Google Firebase</span>
+          <!-- Tools -->
+          <span class="skill-pill reveal" data-category="tools">Power BI</span>
+          <span class="skill-pill reveal" data-category="tools">Tableau</span>
+          <span class="skill-pill reveal" data-category="tools">Pandas</span>
+          <span class="skill-pill reveal" data-category="tools">NumPy</span>
+          <span class="skill-pill reveal" data-category="tools">Matplotlib</span>
+          <span class="skill-pill reveal" data-category="tools">Git</span>
+          <span class="skill-pill reveal" data-category="tools">Jupyter</span>
+          <span class="skill-pill reveal" data-category="tools">Jira</span>
+          <span class="skill-pill reveal" data-category="tools">Kaggle</span>
+        </div>
+
+        <!-- Proficiency bars -->
+        <div class="proficiency reveal" id="proficiency">
+          <h3 class="proficiency__heading">Core Expertise</h3>
+          <div class="proficiency__bars">
+            <div class="prof-bar">
+              <div class="prof-bar__label"><span>Python</span><span class="prof-bar__pct">95%</span></div>
+              <div class="prof-bar__track">
+                <div class="prof-bar__fill" data-width="95"></div>
+              </div>
+            </div>
+            <div class="prof-bar">
+              <div class="prof-bar__label"><span>Machine Learning / AI</span><span class="prof-bar__pct">90%</span>
+              </div>
+              <div class="prof-bar__track">
+                <div class="prof-bar__fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="prof-bar">
+              <div class="prof-bar__label"><span>Azure Cloud</span><span class="prof-bar__pct">85%</span></div>
+              <div class="prof-bar__track">
+                <div class="prof-bar__fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="prof-bar">
+              <div class="prof-bar__label"><span>Computer Vision</span><span class="prof-bar__pct">85%</span></div>
+              <div class="prof-bar__track">
+                <div class="prof-bar__fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="prof-bar">
+              <div class="prof-bar__label"><span>SQL / Databases</span><span class="prof-bar__pct">85%</span></div>
+              <div class="prof-bar__track">
+                <div class="prof-bar__fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="prof-bar">
+              <div class="prof-bar__label"><span>React / Full-Stack</span><span class="prof-bar__pct">75%</span></div>
+              <div class="prof-bar__track">
+                <div class="prof-bar__fill" data-width="75"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================= EDUCATION ============================= -->
+    <section class="section section--alt education" id="education">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section__title">Education &amp; Certifications</h2>
+          <p class="section__subtitle">Academic background and continuous learning</p>
+        </div>
+
+        <div class="education__grid">
+          <!-- Degrees -->
+          <div class="education__degrees">
+            <article class="edu-card reveal">
+              <div class="edu-card__icon" aria-hidden="true">🎓</div>
+              <h3 class="edu-card__degree">Master of Applied Computing</h3>
+              <span class="edu-card__stream">AI Specialization</span>
+              <p class="edu-card__school">University of Windsor — Ontario, Canada</p>
+              <time class="edu-card__date">May 2023 — 2024</time>
+            </article>
+            <article class="edu-card reveal">
+              <div class="edu-card__icon" aria-hidden="true">🎓</div>
+              <h3 class="edu-card__degree">Bachelor of Technology</h3>
+              <span class="edu-card__stream">Computer Science</span>
+              <p class="edu-card__school">Punjabi University — India</p>
+              <time class="edu-card__date">Aug 2015 — May 2019</time>
+            </article>
+          </div>
+
+          <!-- Certifications -->
+          <div class="education__certs">
+            <div class="cert-badge reveal">
+              <span class="cert-badge__icon">
+                <svg viewBox="0 0 23 23" width="20" height="20">
+                  <path fill="#f35325" d="M1 1h10v10H1z" />
+                  <path fill="#81bc06" d="M12 1h10v10H12z" />
+                  <path fill="#05a6f0" d="M1 12h10v10H1z" />
+                  <path fill="#ffba08" d="M12 12h10v10H12z" />
+                </svg>
+              </span>
+              <div>
+                <h4 class="cert-badge__name">Azure Fundamentals — AZ-900</h4>
+                <p class="cert-badge__issuer">Microsoft</p>
+              </div>
+            </div>
+            <div class="cert-badge reveal">
+              <span class="cert-badge__icon">
+                <svg viewBox="0 0 23 23" width="20" height="20">
+                  <path fill="#f35325" d="M1 1h10v10H1z" />
+                  <path fill="#81bc06" d="M12 1h10v10H12z" />
+                  <path fill="#05a6f0" d="M1 12h10v10H1z" />
+                  <path fill="#ffba08" d="M12 12h10v10H12z" />
+                </svg>
+              </span>
+              <div>
+                <h4 class="cert-badge__name">Azure OpenAI Hackathon Badge</h4>
+                <p class="cert-badge__issuer">Microsoft Americas Azure Team</p>
+              </div>
+            </div>
+            <div class="cert-badge reveal">
+              <span class="cert-badge__icon">
+                <svg viewBox="0 0 448 512" width="20" height="20" fill="currentColor">
+                  <path
+                    d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2c-36.5 0-66.8-28.7-66.8-65.5v-46.5c0-35.9 31.2-64.5 66.8-64.5h154.2c36.2 0 66.8-30.2 66.8-67.8v-34.1c0-2.6-.3-5.2-.8-7.7zM124.5 209.9c0-29 25.4-54.3 53.4-54.3h106.8c36.5 0 66.8 30.5 66.8 67.8V325c0 29-25.7 46.1-53.4 54.3-33.8 9.9-66.3 11.7-106.8 0-26.9-7.8-53.4-23.5-53.4-54.3v-40.7h106.8c36.2 0 66.8-28.7 66.8-65.5V262.3c0-35.9-31.2-64.5-66.8-64.5H124.5v12.1z" />
+                </svg>
+              </span>
+              <div>
+                <h4 class="cert-badge__name">Certified Python Associate</h4>
+                <p class="cert-badge__issuer">Infosys</p>
+              </div>
+            </div>
+            <div class="cert-badge reveal">
+              <span class="cert-badge__icon">🇫🇷</span>
+              <div>
+                <h4 class="cert-badge__name">DELF A1–B1</h4>
+                <p class="cert-badge__issuer">Diplôme d'études en langue française</p>
+              </div>
+            </div>
+            <div class="cert-badge reveal">
+              <span class="cert-badge__icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+              </span>
+              <div>
+                <h4 class="cert-badge__name">Managing Jira Projects</h4>
+                <p class="cert-badge__issuer">Atlassian</p>
+              </div>
+            </div>
+            <div class="cert-badge reveal">
+              <span class="cert-badge__icon">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="#F2C811" d="M6 13h4v8H6zM11 7h4v14h-4zM16 2h4v19h-4z" />
+                </svg>
+              </span>
+              <div>
+                <h4 class="cert-badge__name">Learning Power BI Desktop</h4>
+                <p class="cert-badge__issuer">LinkedIn Learning</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Award -->
+        <div class="award reveal">
+          <span class="award__icon" aria-hidden="true">🏆</span>
+          <div>
+            <h4 class="award__title">Best Team – Project Excellence Award</h4>
+            <p class="award__issuer">Infosys, 2022</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================= CONTACT ============================= -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section__title">Let's Build Something Together</h2>
+          <p class="section__subtitle">Open to full-time AI/ML engineering roles, freelance AI projects, and research
+            collaborations.</p>
+        </div>
+
+        <div class="contact__grid">
+          <!-- Left — Info -->
+          <div class="contact__info reveal">
+            <div class="contact-detail">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              <a href="mailto:jaspreetbarnala0123@gmail.com">jaspreetbarnala0123@gmail.com</a>
+            </div>
+            <div class="contact-detail">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+              <a href="https://linkedin.com/in/jaspreet~kaur" target="_blank"
+                rel="noopener noreferrer">linkedin.com/in/jaspreet~kaur</a>
+            </div>
+            <div class="contact-detail">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <span>Greater Toronto Area, Canada</span>
+            </div>
+
+            <div class="contact__cta-cards">
+              <a href="#" class="cta-card" id="resume-card">
+                <span class="cta-card__icon">📄</span>
+                <span class="cta-card__text">View Resume</span>
+              </a>
+              <a href="https://linkedin.com/in/jaspreet~kaur" target="_blank" rel="noopener noreferrer"
+                class="cta-card">
+                <span class="cta-card__icon">💼</span>
+                <span class="cta-card__text">Connect on LinkedIn</span>
+              </a>
+            </div>
+
+            <div class="availability">
+              <span class="availability__dot" aria-hidden="true"></span>
+              <span>Open to Opportunities</span>
+            </div>
+          </div>
+
+          <!-- Right — Form -->
+          <form class="contact-form reveal" id="contact-form" action="https://formspree.io/f/xpwdjqeo" method="POST"
+            novalidate>
+            <div class="form-group">
+              <label for="contact-name">Name</label>
+              <input type="text" id="contact-name" name="name" placeholder="Your name" required autocomplete="name"
+                minlength="2">
+              <span class="form-error" id="name-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email</label>
+              <input type="email" id="contact-email" name="email" placeholder="you@example.com" required
+                autocomplete="email">
+              <span class="form-error" id="email-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="contact-subject">Subject</label>
+              <select id="contact-subject" name="subject" required>
+                <option value="" disabled selected>Select a subject</option>
+                <option value="Job Opportunity">Job Opportunity</option>
+                <option value="Freelance Project">Freelance Project</option>
+                <option value="Collaboration">Collaboration</option>
+                <option value="Other">Other</option>
+              </select>
+              <span class="form-error" id="subject-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" rows="5" placeholder="Tell me about your project…" required
+                minlength="20"></textarea>
+              <span class="form-error" id="message-error"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full" id="contact-submit">
+              Send Message
+              <svg class="btn__arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </button>
+            <p class="form-status" id="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================= FOOTER ============================= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="footer__name">Jaspreet Kaur</span>
+        <div class="footer__nav">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2026 Jaspreet Kaur. All rights reserved.</p>
+        <p class="footer__tagline">Designed &amp; Built with ❤️ in Toronto</p>
+        <div class="footer__socials">
+          <a href="https://linkedin.com/in/jaspreet~kaur" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+          <a href="https://github.com/PreetJas11" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+            </svg>
+          </a>
+          <a href="mailto:jaspreetbarnala0123@gmail.com" aria-label="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top" type="button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15" />
+    </svg>
+  </button>
+
+  <!-- Floating contact pill -->
+  <a href="#contact" class="floating-contact" id="floating-contact" aria-label="Contact me">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+      <polyline points="22,6 12,13 2,6" />
+    </svg>
+    Contact
+  </a>
+
+  <!-- Main JS -->
+  <script src="js/main.js" defer></script>
+</body>
+
+</html>
